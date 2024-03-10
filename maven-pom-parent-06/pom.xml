@@ -12,15 +12,43 @@
         <module>son-model-01</module>
         <module>son-model-02</module>
         <module>son-model-03</module>
+        <module>common-model-general</module>
     </modules>
 
 
     <properties>
         <jackson-core.version>2.16.1</jackson-core.version>
         <fastjson2.version>2.0.46</fastjson2.version>
+        <spring-context.version>6.0.6</spring-context.version>
+        <shiro.version>1.1.0</shiro.version>
+        <commons-io.version>2.11.0</commons-io.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <hutool-all.version>5.8.26</hutool-all.version>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring-context.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-core</artifactId>
